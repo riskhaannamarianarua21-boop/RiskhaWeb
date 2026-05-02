@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Riskha Website</title>
 
-    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <body data-page="0">
 
 <!-- NAVBAR -->
 <nav class="navbar">
@@ -28,36 +26,80 @@
 <section class="hero">
 
     <div class="hero-text">
-        <h3 class="fade-slide">Selamat Datang!</h3>
+        <h3>Selamat Datang!</h3>
 
-        <h1 class="typing">
+        <h1>
             Halo, Saya <span class="highlight">Riskha Narua</span>
         </h1>
 
-        <p class="fade-slide delay-1">
+        <!-- TYPING -->
+        <h2>Saya adalah <span id="typing"></span></h2>
+
+        <p>
             Halo dan selamat datang di website pribadi saya. Saya adalah seorang Mahasiswa 
             yang sedang belajar dan mengembangkan kemampuan di bidang desain dan pengembangan website.
         </p>
 
-        <div class="hero-btn fade-slide delay-2">
+        <div class="hero-btn">
             <a href="gallery.html" class="btn">Lihat Gallery</a>
             <a href="blog.html" class="btn secondary">Baca Blog</a>
         </div>
     </div>
 
-    <div class="hero-img fade-slide delay-2">
+    <div class="hero-img">
         <img src="profil.jpeg" alt="Foto Riskha">
     </div>
 
 </section>
 
+<!-- SKILLS -->
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill">
+        <p>HTML</p>
+        <div class="bar"><div class="progress html"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>CSS</p>
+        <div class="bar"><div class="progress css"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>JavaScript</p>
+        <div class="bar"><div class="progress js"></div></div>
+    </div>
+</section>
+
+<!-- PROJECT -->
+<section class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+        <h3>Website Gallery</h3>
+        <p>Menampilkan koleksi foto dan pengalaman saya</p>
+    </div>
+
+    <div class="project-card">
+        <h3>Blog Pribadi</h3>
+        <p>Berisi artikel dan video tentang aktivitas saya</p>
+    </div>
+</section>
+
 <!-- ABOUT -->
-<section id="about" class="about fade-slide">
+<section id="about" class="about">
     <h2>Tentang Saya</h2>
     <p>
         Saya berbagi pengalaman, karya, dan proses belajar saya di dunia teknologi. 
         Selalu belajar, berkembang, dan berbagi.
     </p>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Ingin Bekerja Sama?</h2>
+    <a href="contact.html" class="btn">Hubungi Saya</a>
 </section>
 
 <!-- FOOTER -->
@@ -86,7 +128,6 @@
     </div>
 </footer>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
