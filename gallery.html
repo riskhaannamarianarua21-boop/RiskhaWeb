@@ -2,37 +2,27 @@
 <html>
 <head>
     <title>Gallery - Riskha Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body bgcolor="#DEB887" text="white">
+<body>
 
-    <table width="100%">
-        <tr>
-            <td><h2><font color="White">Riskha21_</font></h2></td>
-            <td align="right">
-                <a href="index.html"><font color="Black">HOME</font></a> |
-                <a href="gallery.html"><font color="Black">GALLERY</font></a> |
-                <a href="blog.html"><font color="Black">BLOG</font></a> |
-                <a href="contact.html"><font color="Black">CONTACT</font></a>
-=======
-<body bgcolor="#204969" text="white">
+    <!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Riskha21_</h2>
 
-    <table width="100%">
-        <tr>
-            <td><h2><font color="white">Riskha21_</font></h2></td>
-            <td align="right">
-                <a href="index.html"><font color="black">HOME</font></a> |
-                <a href="gallery.html"><font color="black">GALLERY</font></a> |
-                <a href="blog.html"><font color="black">BLOG</font></a> |
-                <a href="contact.html"><font color="black">CONTACT</font></a>
->>>>>>> 86398e3 (tambah video dan gambar)
-            </td>
-        </tr>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
     </table>
 
     <br><br>
-
 
     <center>
         <h1>My Gallery</h1>
@@ -41,58 +31,65 @@
 
     <br><br>
 
+    <!-- GALLERY -->
+    <table class="gallery-table">
 
-    <table width="80%" align="center">
-
-    
         <tr align="center">
-            <td>
-                <img src="foto1.jpeg" width="200"><br>
+            <td class="fade-up">
+                <img src="foto1.jpeg" class="gallery-img" onclick="openImage(this.src)">
                 <p>Saya</p>
             </td>
-            <td>
-                <img src="foto2.jpeg" width="200"><br>
+
+            <td class="fade-up">
+                <img src="foto2.jpeg" class="gallery-img" onclick="openImage(this.src)">
                 <p>Bersama Teman-teman</p>
             </td>
-            <td>
-                <img src="Rj4.jpeg" width="200"><br>
-                <p>Keindahan Rj 4 (Papua Barat Daya)</p>
+
+            <td class="fade-up">
+                <img src="Rj4.jpeg" class="gallery-img" onclick="openImage(this.src)">
+                <p>Keindahan Raja Ampat</p>
             </td>
         </tr>
 
-    
         <tr align="center">
-            <td>
-                <img src="foto4.jpeg" width="200"><br>
-                <p>Telaga Bintang Rj 4 (Papua Barat Daya)</p>
+            <td class="fade-up">
+                <img src="foto4.jpeg" class="gallery-img" onclick="openImage(this.src)">
+                <p>Telaga Bintang</p>
             </td>
-            <td>
-                <img src="foto5.jpeg" width="200"><br>
+
+            <td class="fade-up">
+                <img src="foto5.jpeg" class="gallery-img" onclick="openImage(this.src)">
                 <p>Pemandangan Kampus</p>
             </td>
-            <td>
-                <img src="foto6.jpeg" width="200"><br>
+
+            <td class="fade-up">
+                <img src="foto6.jpeg" class="gallery-img" onclick="openImage(this.src)">
                 <p>Pemandangan Kampus</p>
             </td>
         </tr>
 
-       
         <tr align="center">
-            <td>
-                <img src="foto7.jpeg" width="200"><br>
-                <p>Mahkota Khas Papua - Kerajinan Tangan dari ibu saya</p>
+            <td class="fade-up">
+                <img src="foto7.jpeg" class="gallery-img" onclick="openImage(this.src)">
+                <p>Mahkota Khas Papua</p>
             </td>
-            <td></td>
-            <td></td>
         </tr>
 
     </table>
+
+    <!-- LIGHTBOX -->
+    <div id="lightbox" onclick="closeImage()">
+        <img id="lightbox-img">
+    </div>
 
     <br><br><br>
 
     <hr>
 
     <p align="center">© 2026 Riskha</p>
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
 
 </body>
 </html>

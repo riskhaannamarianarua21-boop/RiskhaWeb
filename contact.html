@@ -2,36 +2,32 @@
 <html>
 <head>
     <title>Contact - Riskha Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body bgcolor="#DEB887" text="white">
-=======
-<body bgcolor="#204969" text="white">
->>>>>>> 86398e3 (tambah video dan gambar)
+<body>
 
-    <table width="100%">
-        <tr>
-            <td><h2><font color="White">Riskha21_</font></h2></td>
-            <td align="right">
-                <a href="index.html"><font color="Black">HOME</font></a> |
-                <a href="gallery.html"><font color="Black">GALLERY</font></a> |
-                <a href="blog.html"><font color="Black">BLOG</font></a> |
-                <a href="contact.html"><font color="Black">CONTACT</font></a>
-            </td>
-        </tr>
-    </table>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Riskha21_</h2>
 
-    <br><br>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
-    <center>
-        <h1>Contact Me</h1>
-        <p>Anda dapat menghubungi saya melalui kontak tersebut</p>
-    </center>
+<!-- HEADER -->
+<section class="contact-header">
+    <h1>Contact Me</h1>
+    <p>Anda dapat menghubungi saya melalui kontak berikut</p>
+</section>
 
-    <br><br>
-
-    <table width="50%" align="center">
+<!-- DATA KONTAK -->
+<div class="contact-box fade-up">
+    <table>
         <tr>
             <td><b>Nama</b></td>
             <td>:</td>
@@ -53,16 +49,32 @@
         <tr>
             <td><b>Address</b></td>
             <td>:</td>
-            <td>JL.Pulau Sumatera(Bahu)</td>
+            <td>JL. Pulau Sumatera (Bahu)</td>
         </tr>
-
     </table>
+</div>
 
-    <br><br><br>
+<!-- SOSIAL -->
+<div class="contact-social fade-up">
+    <h3>Hubungi Saya</h3>
 
-    <hr>
+    <div class="social-icons">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+             onclick="openWA()">
 
-    <p align="center">© 2026 Riskha</p>
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png"
+             onclick="openIG()">
+
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png"
+             onclick="openEmail()">
+    </div>
+</div>
+
+<hr>
+
+<p align="center">© 2026 Riskha</p>
+
+<script src="script.js"></script>
 
 </body>
 </html>

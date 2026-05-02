@@ -1,60 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="id">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Riskha Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body bgcolor="#DEB887" text="white">
-=======
-<body bgcolor="#204969" text="white">
->>>>>>> 86398e3 (tambah video dan gambar)
+<body>
+    <body data-page="0">
 
-    <table width="100%">
-        <tr>
-            <td><h2><font color="White">Riskha21_</font></h2></td>
-            <td align="right">
-                <a href="index.html"><font color="Black">HOME</font></a> |
-                <a href="gallery.html"><font color="Black">GALLERY</font></a> |
-                <a href="blog.html"><font color="Black">BLOG</font></a> |
-                <a href="contact.html"><font color="Black">CONTACT</font></a>
-            </td>
-        </tr>
-    </table>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Riskha21_</h2>
 
-    <br><br>
+    <div class="menu">
+        <a href="index.html" class="active">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
-    
-    <table width="100%">
-        <tr>
-            
-            <td width="50%">
-                <h3>Selamat Datang!</h3>
+<!-- HERO -->
+<section class="hero">
 
-                <h1>Halo, Saya Riskha Narua</h1>
+    <div class="hero-text">
+        <h3 class="fade-slide">Selamat Datang!</h3>
 
-                <p>
-                   Halo dan selamat datang diwebsite pribadi saya.Saya adalah seorang Mahasiswa yang sedang belajar dan mengembangkan kemampuan dibidang desain dan pengembangan website melalui website ini,saya ingin berbagi hasil karya,pengalaman, dan proses belajar yang saya jalani.
-                   Terima Kasih telah berkunjung.
-                </p>
+        <h1 class="typing">
+            Halo, Saya <span class="highlight">Riskha Narua</span>
+        </h1>
 
-                <br>
+        <p class="fade-slide delay-1">
+            Halo dan selamat datang di website pribadi saya. Saya adalah seorang Mahasiswa 
+            yang sedang belajar dan mengembangkan kemampuan di bidang desain dan pengembangan website.
+        </p>
 
-                
-                
-            </td>
+        <div class="hero-btn fade-slide delay-2">
+            <a href="gallery.html" class="btn">Lihat Gallery</a>
+            <a href="blog.html" class="btn secondary">Baca Blog</a>
+        </div>
+    </div>
 
-            <td width="50%" align="center">
-                <img src="profil.jpeg" width="300" alt="Profile">
-            </td>
-        </tr>
-    </table>
+    <div class="hero-img fade-slide delay-2">
+        <img src="profil.jpeg" alt="Foto Riskha">
+    </div>
 
-    <br><br><br>
+</section>
 
-    <hr>
+<!-- ABOUT -->
+<section id="about" class="about fade-slide">
+    <h2>Tentang Saya</h2>
+    <p>
+        Saya berbagi pengalaman, karya, dan proses belajar saya di dunia teknologi. 
+        Selalu belajar, berkembang, dan berbagi.
+    </p>
+</section>
 
-    <p align="center">© 2026 Riskha</p>
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>Menu</h3>
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Kontak</h3>
+            <p id="email">Email: riskhaannamarianarua21@gmail.com</p>
+            <p>Indonesia</p>
+            <button onclick="copyEmail()" class="copy-btn">Copy Email</button>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Riskha | All Rights Reserved
+    </div>
+</footer>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>

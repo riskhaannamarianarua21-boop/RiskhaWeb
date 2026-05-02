@@ -2,110 +2,143 @@
 <html>
 <head>
     <title>Blog - Riskha Website</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<<<<<<< HEAD
-<body bgcolor="#DEB887" text="white">
-=======
-<body bgcolor="#204969" color="white">
->>>>>>> 86398e3 (tambah video dan gambar)
+<body>
 
-    <table width="100%">
-        <tr>
-            <td><h2><font color="White">Riskha21_</font></h2></td>
-            <td align="right">
-                <a href="index.html"><font color="Black">HOME</font></a> |
-                <a href="gallery.html"><font color="Black">GALLERY</font></a> |
-                <a href="blog.html"><font color="Black">BLOG</font></a> |
-                <a href="contact.html"><font color="Black">CONTACT</font></a>
-            </td>
-        </tr>
-    </table>
+<!-- NAVBAR -->
+<nav class="navbar">
+    <h2 class="logo">Riskha21_</h2>
 
-    <br><br>
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
-    <center>
-        <h1>My Blog</h1>
-        <p>Selamat Datang Di Artikel Saya</p>
-    </center>
+<br><br>
 
-    <br><br>
+<center>
+    <h1>My Blog</h1>
+    <p>Selamat Datang Di Artikel Saya</p>
+</center>
 
-    <table width="80%" align="center">
-        <tr>
-            <td>
-                <h2>Article 1: Technology</h2>
-                <p>Teknologi berkembang sangat cepat dan membantu kehidupan manusia.</p>
+<br><br>
 
-                <video width="400" controls>
-                    <source src="video1.mp4" type="video/mp4">
-                    Browser tidak mendukung video.
-                </video>
-            </td>
-        </tr>
-    </table>
+<div class="featured-article">
+    <h2>🔥 Artikel Utama</h2>
 
-    <br><br>
+    <div class="featured-box">
 
-    <table width="80%" align="center">
-        <tr>
-            <td>
-                <h2>Article 2: Html</h2>
-                <p>HTML (HyperText Markup Language) adalah bahasa dasar yang digunakan untuk membuat dan menyusun halaman website.</p>
+        <!-- GAMBAR -->
+        <img src="web.png" class="featured-img">
 
-                <video width="400" controls>
-                    <source src="video2.mp4" type="video/mp4">
-                </video>
-            </td>
-        </tr>
-    </table>
+        <h3>Belajar HTML, CSS, dan JavaScript</h3>
 
-    <br><br>
+        <p>
+            Pelajari dasar pembuatan website dari HTML, CSS, dan JavaScript melalui sumber berikut:
+        </p>
 
-    <table width="80%" align="center">
-        <tr>
-            <td>
-                <h2>Article 3: About Me</h2>
-                <p>Video Tentang saya Secara Singkat</p>
+        <a href="https://www.w3schools.com/html/" target="_blank" class="read-more">Belajar HTML →</a><br>
+        <a href="https://www.w3schools.com/css/" target="_blank" class="read-more">Belajar CSS →</a><br>
+        <a href="https://www.w3schools.com/js/" target="_blank" class="read-more">Belajar JavaScript →</a>
 
-                <video width="400" controls>
-                    <source src="video3.mp4" type="video/mp4">
-                </video>
-            </td>
-        </tr>
-    </table>
+    </div>
+</div>
 
-    <table width="80%" align="center">
-        <tr>
-            <td>
-                <h2>Article 4: My Hobby</h2>
-                <p>Saya suka mendengarkan musik Contohnya seperti lagu didalam vidio tersebut.</p>
+<br>
 
-                <video width="400" controls>
-                    <source src="video4.mp4" type="video/mp4">
-                </video>
-            </td>
-        </tr>
-    </table>
-    <table width="80%" align="center">
-        <tr>
-            <td>
-                <h2>Article 5: My Daily Activities</h2>
-                <p>Saya memiliki berbagai aktivitas sehari-hari seperti kuliah, belajar, dan menghabiskan waktu bersama teman-teman. Aktivitas ini membantu saya menjadi lebih produktif dan berkembang setiap hari.</p>
+<!-- ARTICLE 1 -->
+<table width="80%" align="center" class="blog-card">
+    <tr>
+        <td>
+            <h2>Article 1: Technology</h2>
+            <p>Teknologi berkembang sangat cepat dan membantu kehidupan manusia.</p>
 
-                <video width="400" controls>
-                    <source src="video5.mp4" type="video/mp4">
-                </video>
-            </td>
-        </tr>
-    </table>
+            <video controls class="blog-video">
+                <source src="video1.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+</table>
 
+<br>
 
-    <br><br><br>
+<!-- ARTICLE 2 -->
+<table width="80%" align="center" class="blog-card">
+    <tr>
+        <td>
+            <h2>Article 2: HTML</h2>
+            <p>HTML adalah bahasa dasar untuk membuat website.</p>
 
-    <hr>
+            <video controls class="blog-video">
+                <source src="video2.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+</table>
 
-    <p align="center">© 2026 Riskha</p>
+<br>
+
+<!-- ARTICLE 3 -->
+<table width="80%" align="center" class="blog-card">
+    <tr>
+        <td>
+            <h2>Article 3: About Me</h2>
+            <p>Video tentang saya secara singkat.</p>
+
+            <video controls class="blog-video">
+                <source src="video3.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ARTICLE 4 -->
+<table width="80%" align="center" class="blog-card">
+    <tr>
+        <td>
+            <h2>Article 4: My Hobby</h2>
+            <p>Saya suka mendengarkan musik.</p>
+
+            <video controls class="blog-video">
+                <source src="video4.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+</table>
+
+<br>
+
+<!-- ARTICLE 5 -->
+<table width="80%" align="center" class="blog-card">
+    <tr>
+        <td>
+            <h2>Article 5: My Daily Activities</h2>
+            <p>Kegiatan saya sehari-hari seperti kuliah, belajar, dan bersama teman.</p>
+
+            <video controls class="blog-video">
+                <source src="video5.mp4" type="video/mp4">
+            </video>
+        </td>
+    </tr>
+</table>
+
+<br><br><br>
+
+<hr>
+
+<p align="center">© 2026 Riskha</p>
+
+<!-- JS -->
+<script src="script.js"></script>
 
 </body>
 </html>
