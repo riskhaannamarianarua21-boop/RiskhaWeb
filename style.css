@@ -271,7 +271,37 @@ hr {
         transform: translateY(0);
     }
 }
+.skills, .projects, .cta {
+    padding: 60px 10%;
+    text-align: center;
+}
 
+.bar {
+    background: #1e293b;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+.progress {
+    height: 10px;
+    background: #38bdf8;
+}
+
+.html { width: 90%; }
+.css { width: 80%; }
+.js { width: 70%; }
+
+.project-card {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.cta {
+    background: rgba(0,0,0,0.3);
+}
 
 /* ===== GALLERY STYLE ===== */
 /* GALLERY TABLE */
