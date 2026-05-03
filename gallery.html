@@ -9,87 +9,91 @@
 
 <body>
 
-    <!-- NAVBAR -->
+<!-- NAVBAR -->
 <nav class="navbar">
     <h2 class="logo">Riskha21_</h2>
 
     <div class="menu">
         <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="gallery.html" class="active">Gallery</a>
         <a href="blog.html">Blog</a>
         <a href="contact.html">Contact</a>
+
+        
+    <!-- TOMBOL DARK/LIGHT -->
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+</div>
     </div>
 </nav>
-    </table>
 
-    <br><br>
+<br><br>
 
-    <center>
-        <h1>My Gallery</h1>
-        <p>Beberapa Foto yang ada di Gallery saya</p>
-    </center>
+<center>
+    <h1>My Gallery</h1>
+    <p>Beberapa Foto yang ada di Gallery saya</p>
+</center>
 
-    <br><br>
+<br><br>
 
-    <!-- GALLERY -->
-    <table class="gallery-table">
+<!-- GALLERY -->
+<table class="gallery-table">
 
-        <tr align="center">
-            <td class="fade-up">
-                <img src="foto1.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Saya</p>
-            </td>
+    <tr align="center">
+        <td class="fade-up">
+            <img src="foto1.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Saya</p>
+        </td>
 
-            <td class="fade-up">
-                <img src="foto2.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Bersama Teman-teman</p>
-            </td>
+        <td class="fade-up">
+            <img src="foto2.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Bersama Teman-teman</p>
+        </td>
 
-            <td class="fade-up">
-                <img src="Rj4.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Keindahan Raja Ampat</p>
-            </td>
-        </tr>
+        <td class="fade-up">
+            <img src="Rj4.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Keindahan Raja Ampat</p>
+        </td>
+    </tr>
 
-        <tr align="center">
-            <td class="fade-up">
-                <img src="foto4.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Telaga Bintang</p>
-            </td>
+    <tr align="center">
+        <td class="fade-up">
+            <img src="foto4.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Telaga Bintang</p>
+        </td>
 
-            <td class="fade-up">
-                <img src="foto5.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Pemandangan Kampus</p>
-            </td>
+        <td class="fade-up">
+            <img src="foto5.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Pemandangan Kampus</p>
+        </td>
 
-            <td class="fade-up">
-                <img src="foto6.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Pemandangan Kampus</p>
-            </td>
-        </tr>
+        <td class="fade-up">
+            <img src="foto6.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Pemandangan Kampus</p>
+        </td>
+    </tr>
 
-        <tr align="center">
-            <td class="fade-up">
-                <img src="foto7.jpeg" class="gallery-img" onclick="openImage(this.src)">
-                <p>Mahkota Khas Papua</p>
-            </td>
-        </tr>
+    <tr align="center">
+        <td class="fade-up">
+            <img src="foto7.jpeg" class="gallery-img" onclick="openImage(this.src)">
+            <p>Mahkota Khas Papua</p>
+        </td>
+    </tr>
 
-    </table>
+</table>
 
-    <!-- LIGHTBOX -->
-    <div id="lightbox" onclick="closeImage()">
-        <img id="lightbox-img">
-    </div>
+<!-- LIGHTBOX (POPUP GAMBAR) -->
+<div id="lightbox" onclick="closeImage()">
+    <img id="lightbox-img">
+</div>
 
-    <br><br><br>
+<br><br><br>
 
-    <hr>
+<hr>
 
-    <p align="center">© 2026 Riskha</p>
+<p align="center">© 2026 Riskha</p>
 
-    <!-- JAVASCRIPT -->
-    <script src="script.js"></script>
+<!-- JAVASCRIPT -->
+<script src="script.js"></script>
 
 </body>
 </html>
