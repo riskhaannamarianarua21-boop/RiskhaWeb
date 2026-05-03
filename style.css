@@ -1,3 +1,18 @@
+:root {
+    --bg: #0f1c2e;
+    --text: white;
+}
+
+body.light-mode {
+    --bg: #f5f7fa;
+    --text: #222;
+}
+
+body {
+    background: var(--bg);
+    color: var(--text);
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -7,6 +22,8 @@
 
 /* BODY */
 body {
+
+    
     font-family: 'Segoe UI', sans-serif;
     background: linear-gradient(135deg, #0f172a, #1e3a5f);
     color: #fff;
@@ -271,37 +288,50 @@ hr {
         transform: translateY(0);
     }
 }
-.skills, .projects, .cta {
-    padding: 60px 10%;
-    text-align: center;
-}
 
-.bar {
+/* THEME BUTTON */
+.theme-btn {
+    margin-left: 20px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
     background: #1e293b;
-    border-radius: 20px;
-    margin: 10px 0;
+    color: white;
+    transition: 0.3s;
 }
 
-.progress {
-    height: 10px;
-    background: #38bdf8;
+.theme-btn:hover {
+    transform: scale(1.1);
 }
 
-.html { width: 90%; }
-.css { width: 80%; }
-.js { width: 70%; }
-
-.project-card {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    margin: 10px;
-    border-radius: 15px;
-    display: inline-block;
+/* LIGHT MODE */
+.light-mode {
+    background: #f1f5f9;
+    color: #0f172a;
 }
 
-.cta {
-    background: rgba(0,0,0,0.3);
+/* NAVBAR LIGHT */
+.light-mode .navbar {
+    background: rgba(255,255,255,0.7);
 }
+
+/* TEXT LIGHT */
+.light-mode p {
+    color: #334155;
+}
+
+/* CARD LIGHT */
+.light-mode .project-card,
+.light-mode .featured-box {
+    background: rgba(0,0,0,0.05);
+}
+
+/* BUTTON LIGHT */
+.light-mode .btn {
+    background: #0ea5e9;
+}
+
 
 /* ===== GALLERY STYLE ===== */
 /* GALLERY TABLE */
@@ -347,6 +377,124 @@ hr {
 .fade-up.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* GRID GALLERY */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 10%;
+}
+
+.gallery-item {
+    text-align: center;
+}
+
+/* IMAGE */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* LIGHTBOX */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.85);
+    backdrop-filter: blur(10px);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+/* GAMBAR BESAR */
+#lightbox img {
+    max-width: 85%;
+    max-height: 85%;
+    border-radius: 15px;
+
+    /* efek glow */
+    box-shadow: 0 0 60px rgba(56,189,248,0.8);
+
+    animation: zoomIn 0.3s ease;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ANIMASI */
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* gambar gallery */
+.gallery-img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* efek hover */
+.gallery-img:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* jarak tabel */
+.gallery-table {
+    margin: auto;
+    border-spacing: 30px;
+}
+
+/* LIGHTBOX */
+#lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+    text-align: center;
+    padding-top: 50px;
+}
+
+#lightbox img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
 }
 
 /* ===== BLOG STYLE ===== */
@@ -439,4 +587,354 @@ hr {
     .contact-box {
         width: 90%;
     }
+}
+
+.blog-card {
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.4s;
+}
+
+.blog-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.featured-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+/* 🔥 efek lampu */
+.glow:hover {
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 20px rgba(56,189,248,0.8),
+        0 0 40px rgba(56,189,248,0.6),
+        0 0 80px rgba(56,189,248,0.4);
+}
+
+/* hanya untuk artikel utama */
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 15px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: white;
+    text-decoration: none;
+}
+
+/* ===== PREMIUM ROOT ===== */
+:root {
+    --bg: #0f172a;
+    --text: #ffffff;
+    --card: rgba(255,255,255,0.05);
+    --accent: #38bdf8;
+    --glass: rgba(255,255,255,0.08);
+    --border: rgba(255,255,255,0.1);
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: var(--text);
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ===== NAVBAR PREMIUM ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    backdrop-filter: blur(12px);
+    background: rgba(0,0,0,0.3);
+    border-bottom: 1px solid var(--border);
+}
+
+/* ===== HERO ===== */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+}
+
+.highlight {
+    color: var(--accent);
+}
+
+/* BOX CONTACT */
+.contact-box {
+    width: 85%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* SOSIAL */
+.contact-social {
+    width: 85%;
+    margin: 30px auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* ICON */
+.social-icons img {
+    width: 50px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+/* 🔥 EFEK CAHAYA */
+.glow {
+    box-shadow:
+        0 0 25px rgba(56,189,248,0.7),
+        0 0 50px rgba(56,189,248,0.5),
+        0 0 80px rgba(56,189,248,0.3);
+}
+
+/* efek hover biar hidup */
+.glow:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+}
+
+/* ===== BUTTON PREMIUM ===== */
+.btn {
+    padding: 12px 25px;
+    border-radius: 30px;
+    background: linear-gradient(45deg, #38bdf8, #0ea5e9);
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 5px 20px rgba(56,189,248,0.3);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 30px rgba(56,189,248,0.6);
+}
+
+.btn.secondary {
+    background: transparent;
+    border: 1px solid var(--accent);
+}
+
+/* ===== CARD (GLASS) ===== */
+.project-card {
+    background: var(--glass);
+    border: 1px solid var(--border);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+/* ===== SKILLS ===== */
+.skills {
+    padding: 60px 10%;
+}
+
+.bar {
+    background: #1e293b;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+}
+
+/* ===== CTA ===== */
+.cta {
+    text-align: center;
+    padding: 60px;
+    background: linear-gradient(45deg, rgba(56,189,248,0.1), transparent);
+}
+
+/* ===== IMAGE EFFECT ===== */
+.hero-img img {
+    width: 320px;
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.hero-img img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(56,189,248,0.5);
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(56,189,248,0.3), transparent);
+    top: -100px;
+    left: -100px;
+    filter: blur(100px);
+    z-index: -1;
+}
+
+.hero-btn {
+    margin-top: 40px; /* bikin tombol turun */
+    display: flex;
+    gap: 15px;
+}
+
+/* tombol contact */
+.btn.contact {
+    background: transparent;
+    border: 2px solid #00bfff;
+    color: #00bfff;
+}
+
+.btn.contact:hover {
+    background: #00bfff;
+    color: white;
+}
+
+/* LIGHT MODE */
+body.light-mode {
+    background: #f5f7fa;
+    color: #222; /* teks utama jadi gelap */
+}
+
+/* navbar */
+body.light-mode .navbar {
+    background: #ffffff;
+}
+
+/* teks hero */
+body.light-mode .hero-text h1 {
+    color: #222;
+}
+
+body.light-mode .hero-text p {
+    color: #444;
+}
+
+/* highlight nama */
+body.light-mode .highlight {
+    color: #0077ff;
+}
+
+/* menu navbar */
+body.light-mode .menu a {
+    color: #333;
+}
+
+body.light-mode .menu a:hover {
+    color: #0077ff;
+}
+
+/* tombol */
+body.light-mode .btn {
+    background: #0077ff;
+    color: white;
+}
+
+body.light-mode .btn.secondary {
+    background: transparent;
+    border: 2px solid #0077ff;
+    color: #0077ff;
+}
+
+body.light-mode .btn.contact {
+    border: 2px solid #0077ff;
+    color: #0077ff;
+}
+
+/* CARD CONTACT */
+.contact-card {
+    background: linear-gradient(135deg, #1e2a47, #0f1c2e);
+    color: white; /* INI PENTING */
+}
+
+/* label kiri (Nama, Email, dll) */
+.contact-card strong {
+    color: #00bfff;
+}
+
+/* isi teks kanan */
+.contact-card p {
+    color: #ffffff;
+}
+
+/* ===== LIGHT MODE CONTACT ===== */
+
+/* box utama contact */
+body.light-mode .contact-card {
+    background: #ffffff;
+    color: #222;
+}
+
+/* label kiri (Nama, Email, dll) */
+body.light-mode .contact-card strong {
+    color: #0077ff;
+}
+
+/* isi teks kanan */
+body.light-mode .contact-card p {
+    color: #333;
+}
+
+/* judul "Hubungi Saya" */
+body.light-mode h2 {
+    color: #222;
+}
+
+/* icon (WA, IG, Gmail) biar tetap jelas */
+body.light-mode .contact-icons img {
+    filter: none;
+}
+
+/* ===== LIGHT MODE - BACKGROUND TABEL ===== */
+
+/* tabel utama */
+body.light-mode table {
+    background: #ffffff;
+    color: #222;
+}
+
+/* cell tabel */
+body.light-mode td {
+    background: #ffffff;
+    color: #222;
+}
+
+/* kalau kamu pakai class khusus (lebih aman) */
+body.light-mode .gallery-table,
+body.light-mode .contact-table {
+    background: #ffffff;
+}
+
+/* box contact */
+body.light-mode .contact-card,
+body.light-mode .contact-box,
+body.light-mode .contact-container {
+    background: #ffffff !important;
+    color: #222 !important;
 }
