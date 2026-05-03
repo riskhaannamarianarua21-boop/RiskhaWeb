@@ -16,8 +16,9 @@
     <div class="menu">
         <a href="index.html">Home</a>
         <a href="gallery.html">Gallery</a>
-        <a href="blog.html">Blog</a>
+        <a href="blog.html" class="active">Blog</a>
         <a href="contact.html">Contact</a>
+         <button id="theme-toggle" class="theme-btn">🌙</button>
     </div>
 </nav>
 
@@ -30,34 +31,38 @@
 
 <br><br>
 
-<div class="featured-article">
-    <h2>🔥 Artikel Utama</h2>
+<!-- 🔥 ARTIKEL UTAMA (SUDAH JADI TABLE) -->
+<table width="85%" align="center" class="blog-card glow">
+    <tr>
+        <!-- KIRI (GAMBAR + TEKS) -->
+        <td width="70%">
+            <h2>🔥 Artikel Utama</h2>
 
-    <div class="featured-box">
+            <img src="web.png" class="featured-img">
 
-        <!-- GAMBAR -->
-        <img src="web.png" class="featured-img">
+            <h3>Belajar HTML, CSS, dan JavaScript</h3>
 
-        <h3>Belajar HTML, CSS, dan JavaScript</h3>
+            <p>
+                Pelajari dasar pembuatan website dari HTML, CSS, dan JavaScript.
+            </p>
+        </td>
 
-        <p>
-            Pelajari dasar pembuatan website dari HTML, CSS, dan JavaScript melalui sumber berikut:
-        </p>
+        <!-- KANAN (BUTTON) -->
+        <td width="30%" align="center">
+            <a href="https://www.w3schools.com" target="_blank" class="read-more">
+                Read More →
+            </a>
+        </td>
+    </tr>
+</table>
 
-        <a href="https://www.w3schools.com/html/" target="_blank" class="read-more">Belajar HTML →</a><br>
-        <a href="https://www.w3schools.com/css/" target="_blank" class="read-more">Belajar CSS →</a><br>
-        <a href="https://www.w3schools.com/js/" target="_blank" class="read-more">Belajar JavaScript →</a>
+<br><br>
 
-    </div>
-</div>
-
-<br>
-
-<!-- ARTICLE 1 -->
-<table width="80%" align="center" class="blog-card">
+<!-- 🔥 ARTICLE 1 -->
+<table width="80%" align="center" class="blog-card glow">
     <tr>
         <td>
-            <h2>Article 1: Technology</h2>
+            <h2>Technology</h2>
             <p>Teknologi berkembang sangat cepat dan membantu kehidupan manusia.</p>
 
             <video controls class="blog-video">
@@ -70,15 +75,16 @@
 <br>
 
 <!-- ARTICLE 2 -->
-<table width="80%" align="center" class="blog-card">
+<table width="80%" align="center" class="blog-card glow">
     <tr>
         <td>
-            <h2>Article 2: HTML</h2>
+            <h2>HTML</h2>
             <p>HTML adalah bahasa dasar untuk membuat website.</p>
 
             <video controls class="blog-video">
                 <source src="video2.mp4" type="video/mp4">
             </video>
+
         </td>
     </tr>
 </table>
@@ -86,10 +92,10 @@
 <br>
 
 <!-- ARTICLE 3 -->
-<table width="80%" align="center" class="blog-card">
+<table width="80%" align="center" class="blog-card glow">
     <tr>
         <td>
-            <h2>Article 3: About Me</h2>
+            <h2>About Me</h2>
             <p>Video tentang saya secara singkat.</p>
 
             <video controls class="blog-video">
@@ -102,10 +108,10 @@
 <br>
 
 <!-- ARTICLE 4 -->
-<table width="80%" align="center" class="blog-card">
+<table width="80%" align="center" class="blog-card glow">
     <tr>
         <td>
-            <h2>Article 4: My Hobby</h2>
+            <h2>My Hobby</h2>
             <p>Saya suka mendengarkan musik.</p>
 
             <video controls class="blog-video">
@@ -118,11 +124,11 @@
 <br>
 
 <!-- ARTICLE 5 -->
-<table width="80%" align="center" class="blog-card">
+<table width="80%" align="center" class="blog-card glow">
     <tr>
         <td>
-            <h2>Article 5: My Daily Activities</h2>
-            <p>Kegiatan saya sehari-hari seperti kuliah, belajar, dan bersama teman.</p>
+            <h2>My Daily Activities</h2>
+            <p>Kegiatan saya sehari-hari seperti kuliah dan belajar.</p>
 
             <video controls class="blog-video">
                 <source src="video5.mp4" type="video/mp4">
@@ -137,7 +143,6 @@
 
 <p align="center">© 2026 Riskha</p>
 
-<!-- JS -->
 <script src="script.js"></script>
 
 </body>
