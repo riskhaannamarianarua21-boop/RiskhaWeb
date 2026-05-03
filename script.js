@@ -80,3 +80,39 @@ function copyEmail() {
     alert("Email berhasil disalin!");
 }
 
+const toggleBtn = document.getElementById("theme-toggle");
+
+// CEK MODE DARI LOCAL STORAGE
+if (localStorage.getItem("theme") === "light") {
+    document.body.classList.add("light-mode");
+    toggleBtn.innerHTML = "☀️";
+}
+
+const toggle = document.getElementById("theme-toggle");
+
+// SET MODE SAAT HALAMAN DIBUKA
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        if (toggle) toggle.textContent = "☀️";
+    }
+});
+
+// SAAT DIKLIK → LANGSUNG BERUBAH
+if (toggle) {
+    toggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+
+        // simpan ke localStorage
+        if (document.body.classList.contains("light-mode")) {
+            localStorage.setItem("theme", "light");
+            toggle.textContent = "☀️";
+        } else {
+            localStorage.setItem("theme", "dark");
+            toggle.textContent = "🌙";
+        }
+    });
+}
+
