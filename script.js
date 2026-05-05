@@ -115,3 +115,28 @@ if (toggle) {
         }
     });
 }
+
+// tombol lihat data diri
+function showMore() {
+    const more = document.getElementById("more-info");
+
+    if (more.style.display === "block") {
+        more.style.display = "none";
+    } else {
+        more.style.display = "block";
+    }
+}
+
+// animasi scroll
+window.addEventListener("scroll", () => {
+    const elements = document.querySelectorAll(".fade-up");
+
+    elements.forEach(el => {
+        const position = el.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            el.classList.add("show");
+        }
+    });
+});
